@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javas.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-text">Library</div>
+            <button class="button-login">Log in</button>
+        </div>
+        <div class="content">
+            <button class="add-book">+ Add book</button>
+            <div class="grid-container">
+                <div class="grid-element">
+                    <p>author</p>
+                    <p>title</p>
+                    <p>page</p>
+                    <div class="buttons-grid">
+                        <button class="butt read">Read</button>
+                        <button class="butt">Remove</button>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <p>author</p>
+                    <p>title</p>
+                    <p>page</p>
+                    <div class="buttons-grid">
+                        <button class="butt read">Read</button>
+                        <button class="butt">Remove</button>
+                    </div>
+                </div>
+                <div class="grid-element">
+                    <p>author</p>
+                    <p>title</p>
+                    <p>page</p>
+                    <div class="buttons-grid">
+                        <button class="butt read">Read</button>
+                        <button class="butt">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>smthsmth</p>
+            <a href="#">smth</a>
+        </div>
+    </div>
+    <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+            <div>Add new book</div>
+            <input type="text" class="title" placeholder="Title" required maxlength="100">
+            <input type="text" class="author" placeholder="Author" required maxlength="100">
+            <input class="pages" placeholder="Pages" type="number" required max="10000"> 
+            <div class="readit">
+                <p>Have you read it?</p>
+                <input type="checkbox" class="checkbox"  id="checkbox" value="true">
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>
